@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title> Assignment1 Q2
+    </title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        form {
+           margin-top: 50px;
+           margin-left: 400px;
+           margin-bottom: 300px;
+           margin-right: 400px;
+            padding-left: 14px;
+            padding-top: 5px;
+            border-style: ridge;
+            border: 4px lightpink red;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(157, 133, 133);">
+    <p>Q.2 Write a jquery code to 
+        1. Set the color of textbox as red when textbox gets focus.
+       2.Set the color of textbox as white when textbox lost focus.
+  </p>
+    <form>
+        Name:<input type="text" id="hk1"><br><br>
+        Address<input type="text" id="hk2"><br><br>
+        <input type="submit">
+    </form>
+    <script>
+        $(document).ready(function () {
+            $('#hk1,#hk2').focus(function () {
+                $(this).css('background-color','red');
+            });$('#hk1,#hk2').blur(function () {
+                $(this).css('background-color','white');
+            });
+        });
+    </script>
+</body>
+
+</html>
